@@ -19,7 +19,7 @@ streamline your development workflow.
 To set up your development environment using Docker, follow these steps:
 
 1. Ensure that you have Docker installed on your machine. If not, download and install Docker for your operating system
-   from the official website: https://www.docker.com
+   from the [Official Website](https://docs.docker.com/engine/install/) or for WSL2, check out my guide on [How to Install Docker on Windows 10 WSL2](https://codewithkyrian.com/p/how-to-install-docker-in-wsl2-without-docker-desktop).
 
 2. Clone this repository to your local machine.
    ```sh

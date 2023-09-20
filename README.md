@@ -19,15 +19,29 @@ streamline your development workflow.
 To set up your development environment using Docker, follow these steps:
 
 1. Ensure that you have Docker installed on your machine. If not, download and install Docker for your operating system
-   from the [Official Website](https://docs.docker.com/engine/install/) or for WSL2, check out my guide on [How to Install Docker on Windows 10 WSL2](https://codewithkyrian.com/p/how-to-install-docker-in-wsl2-without-docker-desktop).
+   from the [Official Website](https://docs.docker.com/engine/install/) or for WSL2, check out my guide
+   on [How to Install Docker on Windows 10 WSL2](https://codewithkyrian.com/p/how-to-install-docker-in-wsl2-without-docker-desktop).
 
-2. Clone this repository to your local machine.
-   ```sh
-   git clone https://github.com/yourusername/php-docker-development.git
-   cd php-docker-development
-   ```
+2. Set up your project environment.
 
-3. Create a `.env` file in the root directory of the project and configure environment variables as needed.
+    - **Option 1: Easy Setup (Linux, Mac, or WSL2)**
+
+      Run the following command in the root folder of your project to automatically set up the environment:
+
+       ```sh
+       curl -s https://codewithkyrian.com/dockerphp-setup | bash
+       ```
+
+      This script will clone the repository and set up the necessary files in your project.
+
+    - **Option 2: Manual Setup**
+
+      Alternatively, if curl is not available on your system, you can manually set up the environment by downloading
+      the
+      repository and copying the files to the root folder of your project.
+
+3. Create a `.env` file in the root directory of the project and configure environment variables as needed. (One has
+   been created for you if you used the automatic setup script.)
 
 4. Run the Docker Compose command to start the services:
 

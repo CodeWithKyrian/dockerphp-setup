@@ -9,6 +9,7 @@ services:
         volumes:
             - ./:/var/www
             - ./docker/nginx.conf:/opt/docker/etc/nginx/vhost.conf
+            - ./docker/queue-worker.conf:/opt/docker/etc/supervisor.d/queue-worker.conf
             - ./docker/scheduler.sh:/opt/docker/bin/service.d/cron.d/scheduler.sh
         networks:
             - app_network
